@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang='en-us'>
+<head>
+<meta charset='UTF-US'>
+
+<title>
+Construction function
+
+</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function people(name, age){
+	this.name=name;
+	this.age=age;
+	this.yearsToGo = yearsleft;
+	}
+
+// Adding method to object//
+function yearsleft(){
+	var years= 70-this.age;
+	return years;
+	}
+
+
+var tika = new people("Tika", 33);
+var pavitra = new people("Pavitra",23);
+document.write(tika.name+" Will retire in "+tika.yearsToGo()+" years");
+
+</script>
+
+
+
+
+
+</body>
+</html>
